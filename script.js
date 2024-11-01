@@ -1,9 +1,8 @@
 document.getElementById('consultarBtn').addEventListener('click', consultarClima);
 document.getElementById('limpiarBtn').addEventListener('click', limpiarFormulario);
 
-const meteoblueApiKey = 'ZWbQFRK6p2e9XO3P';
-const openCageApiKey = 'TU_API_KEY_OPENCAGE'; // Reemplaza con tu clave de OpenCage
-
+const claveApiMeteoblue = 'ZWbQFRK6p2e9XO3P';
+const claveApiOpenCage = '963395267d3d49fc9eb0015e7dee6d54'; 
 function consultarClima() {
     const ciudad = document.getElementById('city').value;
     if (!ciudad) {
@@ -12,7 +11,7 @@ function consultarClima() {
     }
 
     // Obtener coordenadas de la ciudad usando OpenCage
-    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${ciudad}&key=${openCageApiKey}&language=es&pretty=1`)
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${ciudad}&key=${claveApiOpenCage}&language=es&pretty=1`)
         .then(response => response.json())
         .then(data => {
             if (data.results.length === 0) {
@@ -29,7 +28,7 @@ function consultarClima() {
 }
 
 function consultarMeteoblue(lat, lon) {
-    fetch(`https://my.meteoblue.com/packages/basic-1h_basic-day?apikey=${meteoblueApiKey}&lat=${lat}&lon=${lon}&asl=0&format=json`)
+    fetch(`https://my.meteoblue.com/packages/basic-1h_basic-day?apikey=${claveApiMeteoblue}&lat=${lat}&lon=${lon}&asl=0&format=json`)
         .then(response => response.json())
         .then(data => {
             if (!data || !data.data_1h) {

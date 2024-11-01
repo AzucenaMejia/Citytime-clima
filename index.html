@@ -7,9 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="navbar">
+        <img src="./imagenes/logo .png" alt="Logo">
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre CityTime</a>
+            <a href="#">Modo de Uso</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
     <h1>Consulta de Clima</h1>
+    <h2 class="instruccion">Ingresa el nombre de la ciudad para conocer el clima y ver su mapa de ubicación.</h2>
+
     <form id="weatherForm">
-        <label for="city">Ciudad:</label>
+        <label for="city"></label>
         <input type="text" id="city" name="city" required>
         <button type="button" id="consultarBtn">Consultar</button>
         <button type="button" id="limpiarBtn">Limpiar</button>
@@ -27,5 +39,13 @@
     </table>
     <div id="map"></div>
     <script src="script.js"></script>
+
+<!-- pie de pagina-->
+    <footer>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <a href="#">Uso No Comercial</a>
+        <a href="#">Derechos de Autor</a>
+    </footer>
 </body>
 </html>

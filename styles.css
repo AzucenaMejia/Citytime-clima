@@ -1,30 +1,103 @@
 body {
+    background-color: rgb(225, 238, 250);
     font-family: Arial, sans-serif; /* Establece la fuente del texto a Arial o sans-serif si Arial no está disponible */
     text-align: center; /* Centra el texto horizontalmente */
-    margin: 20px; /* Añade un margen de 20 píxeles alrededor del cuerpo del documento */
+    margin: 20px; /* Agrega un margen de 20 píxeles alrededor del cuerpo del documento */
+}
+
+/* diseño de menu */
+.navbar {
+    background-color: rgb(225, 238, 250);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0; 
+
+
+}
+.navbar img {
+    height: 40px;
+}
+.navbar a {
+    color: rgb(19, 18, 18);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background-color: rgb(231, 147, 21);
+    border-radius: 45px;
+}
+.navbar .menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 form {
-    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles a los formularios */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles a los formularios */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 300px; /* Ajusta este valor según el ancho deseado */
+    padding: 10px;
+    border-radius: 35px; /* Bordes redondeados de 35 píxeles */
+    border: 1px solid #141414;
+    margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles */
 }
 
 input, button {
-    margin: 5px; /* Añade un margen de 5 píxeles alrededor de los elementos input y button */
+    margin: 5px; /* Agrega un margen de 5 píxeles alrededor de los elementos input y button */
 }
+button {
+    background-color: rgb(231, 147, 21);
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 35px;
+    padding: 10px 20px;
+    cursor: pointer;
+    }
+
 
 table {
-    width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+    width: 100%; /* Establece el ancho de la tabla al 100% de su contenedor */
     border-collapse: collapse; /* Colapsa los bordes de la tabla para que no haya espacio entre ellos */
-    margin-top: 20px; /* Añade un margen superior de 20 píxeles a la tabla */
+    margin-top: 20px; /* Agrega un margen superior de 20 píxeles a la tabla */
 }
 
 th, td {
-    border: 1px solid #ddd; /* Añade un borde sólido de 1 píxel y color #ddd a las celdas de la tabla */
-    padding: 8px; /* Añade un relleno de 8 píxeles dentro de las celdas de la tabla */
+    border: 1px solid #ddd; /* Agrega un borde sólido de 1 píxel con color #ddd a las celdas de la tabla */
+    padding: 8px; /* Agrega 8 píxeles de relleno dentro de las celdas de la tabla */
 }
 
 #map {
-    width: 100%; /* Establece el ancho del elemento con id "map" al 100% del contenedor */
+    width: 100%; /* Establece el ancho del elemento con id "map" al 100% de su contenedor */
     height: 400px; /* Establece la altura del elemento con id "map" a 400 píxeles */
-    margin-top: 20px; /* Añade un margen superior de 20 píxeles al elemento con id "map" */
+    margin-top: 20px; /* Agrega un margen superior de 20 píxeles al elemento con id "map" */
 }
+
+footer {
+    background-color: rgba(0, 0, 0, 0.99); /* Establece el color de fondo del pie de página a casi negro con ligera transparencia */
+    color: white; /* Establece el color del texto en el pie de página a blanco */
+    text-align: center; /* Centra el texto horizontalmente en el pie de página */
+    padding: 10px 0; /* Agrega 10 píxeles de relleno en la parte superior e inferior del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior de la ventana */
+    width: 100%; /* Establece el ancho del pie de página al 100% de la ventana */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior de la ventana */
+}
+
+footer a {
+    color: white; /* Establece el color de los enlaces en el pie de página a blanco */
+    margin: 0 15px; /* Agrega un margen de 15 píxeles a la izquierda y derecha de los enlaces en el pie de página */
+    text-decoration: none; /* Elimina el subrayado de los enlaces en el pie de página */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Agrega un subrayado a los enlaces en el pie de página cuando se pasa el cursor sobre ellos */
+}
+
