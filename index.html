@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Consulta de Clima</h1>
+    <form id="weatherForm">
+        <label for="city">Ciudad:</label>
+        <input type="text" id="city" name="city" required>
+        <button type="button" id="consultarBtn">Consultar</button>
+        <button type="button" id="limpiarBtn">Limpiar</button>
+    </form>
+    <table id="weatherTable">
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Temperatura</th>
+                <th>Humedad</th>
+                <th>Viento</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="map"></div>
+    <script src="script.js"></script>
+</body>
+</html>

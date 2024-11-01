@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto a Arial o sans-serif si Arial no está disponible */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px; /* Añade un margen de 20 píxeles alrededor del cuerpo del documento */
+}
+
+form {
+    margin-bottom: 20px; /* Añade un margen inferior de 20 píxeles a los formularios */
+}
+
+input, button {
+    margin: 5px; /* Añade un margen de 5 píxeles alrededor de los elementos input y button */
+}
+
+table {
+    width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla para que no haya espacio entre ellos */
+    margin-top: 20px; /* Añade un margen superior de 20 píxeles a la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Añade un borde sólido de 1 píxel y color #ddd a las celdas de la tabla */
+    padding: 8px; /* Añade un relleno de 8 píxeles dentro de las celdas de la tabla */
+}
+
+#map {
+    width: 100%; /* Establece el ancho del elemento con id "map" al 100% del contenedor */
+    height: 400px; /* Establece la altura del elemento con id "map" a 400 píxeles */
+    margin-top: 20px; /* Añade un margen superior de 20 píxeles al elemento con id "map" */
+}
